@@ -104,11 +104,5 @@
     <InterfaceDefinition Include="MainViewController_iPad.xib" />
     <InterfaceDefinition Include="FlipsideViewController.xib" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MonoVersal.Sensors.DLL_BL_XI\MonoVersal.Sensors.DLL_BL_XI_created_in_VS.csproj">
-      <Project>{C5F7F661-02C1-4DC5-B656-DFC8D6BEC274}</Project>
-      <Name>MonoVersal.Sensors.DLL_BL_XI_created_in_VS</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
