@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -98,6 +98,12 @@
   <ItemGroup>
     <InterfaceDefinition Include="MonoVersal_Sensors_EXE_Pedometer_XI_created_in_XS_MacViewController_iPhone.xib" />
     <InterfaceDefinition Include="MonoVersal_Sensors_EXE_Pedometer_XI_created_in_XS_MacViewController_iPad.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonoVersal.Sensors.DLL_BL_XI\MonoVersal.Sensors.DLL_BL_XI_created_in_VS.csproj">
+      <Project>{C5F7F661-02C1-4DC5-B656-DFC8D6BEC274}</Project>
+      <Name>MonoVersal.Sensors.DLL_BL_XI_created_in_VS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

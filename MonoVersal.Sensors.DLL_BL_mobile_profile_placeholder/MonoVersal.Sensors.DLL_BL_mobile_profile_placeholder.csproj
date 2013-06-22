@@ -5,15 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2036A740-C401-4153-B687-1D07547BA79A}</ProjectGuid>
-    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{4557B3A9-A16F-4F98-B7F1-244779547D46}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MonoVersal.Sensors</RootNamespace>
-    <AssemblyName>MonoVersal.Sensors.DLL_BL_XA</AssemblyName>
+    <AssemblyName>MonoVersal.Sensors.DLL_BL_mobile_profile_placeholder</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
-    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,32 +29,19 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Android" />
-    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties ProjectLinkReference="4557b3a9-a16f-4f98-b7f1-244779547d46" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
-    </VisualStudio>
-  </ProjectExtensions>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
